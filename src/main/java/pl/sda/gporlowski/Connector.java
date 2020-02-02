@@ -3,8 +3,6 @@ package pl.sda.gporlowski;
 import org.jsoup.Jsoup;
 
 import java.io.IOException;
-import java.util.regex.Matcher;
-import java.util.regex.Pattern;
 
 public class Connector {
     public static final String NOT_FOUND = "NOT FOUND";
@@ -21,12 +19,4 @@ public class Connector {
         }
         return requestResult;
     }
-
-    /*public String getHoroscopeText(String pageAsText) {
-        Pattern pattern = Pattern.compile("<h1 class=\"title\">Horoskop dzienny");
-        Matcher matcher = pattern.matcher(pageAsText);
-        if(matcher.find()){
-            result = matcher.group();
-        }
-    }*/
 }
